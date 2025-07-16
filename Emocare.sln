@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emocare.Application", "..\E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emocare.Shared", "Emocare.Shared\Emocare.Shared.csproj", "{EE6E9A24-F4AC-410B-8C74-6EDCE10F3ECF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED67D861-4FF7-4EDA-B70C-D9433CB328A0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8A37AD5F-D4CB-41BE-89BB-1BF143B44675} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3989F837-2BF4-4055-A99D-70AD33D25BE7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F27B585A-D4E2-4D5F-B3A2-BEB17BA3E2D7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EE6E9A24-F4AC-410B-8C74-6EDCE10F3ECF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {36DC0C5A-988B-4DAA-B9F1-61C76EDF9A7C}
