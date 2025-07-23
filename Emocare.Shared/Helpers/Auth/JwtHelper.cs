@@ -25,7 +25,7 @@ namespace Emocare.Shared.Helpers.Auth
             var claims = new List<Claim>
         {
             new(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new(ClaimTypes.Name, user.FirstName),
+            new(ClaimTypes.Name, user.FullName),
             new(ClaimTypes.Email, user.EmailAddress),
             new(ClaimTypes.Role, user.Role.ToString())
             };
