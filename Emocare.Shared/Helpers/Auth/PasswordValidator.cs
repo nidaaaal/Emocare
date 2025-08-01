@@ -1,10 +1,5 @@
-﻿using Emocare.Domain.Interfaces.Helper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Emocare.Domain.Interfaces.Helper.Auth;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Emocare.Shared.Helpers.Auth
 {

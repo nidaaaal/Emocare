@@ -2,9 +2,9 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Emocare.Domain.Entities.Auth;
-using Emocare.Domain.Interfaces.Helper;
 using Microsoft.Extensions.Configuration;
 using System.Text;
+using Emocare.Domain.Interfaces.Helper.Auth;
 
 namespace Emocare.Shared.Helpers.Auth
 {

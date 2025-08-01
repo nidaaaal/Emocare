@@ -1,4 +1,4 @@
-﻿using Emocare.Domain.Interfaces.Helper;
+﻿using Emocare.Domain.Interfaces.Helper.Auth;
 
 namespace Emocare.Shared.Helpers.Auth
 {
