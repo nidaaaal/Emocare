@@ -71,6 +71,7 @@ namespace Emocare.Shared.Helpers.Chat
                 new
                 {
                     model = "deepseek/deepseek-chat-v3-0324:free",
+                    //"openrouter/horizon-alpha"
                     stream = true,
                     messages = new[]
                 {
