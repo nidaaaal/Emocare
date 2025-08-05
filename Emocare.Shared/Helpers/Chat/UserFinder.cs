@@ -15,7 +15,7 @@ namespace Emocare.Shared.Helpers.Chat
 
         public Guid GetId()
         {
-            if (_httpContextAccessor.HttpContext?.Items["userId"] is Guid userId)
+            if ( _httpContextAccessor.HttpContext?.Items["userId"] is Guid userId)
             {
                 return userId;
             }

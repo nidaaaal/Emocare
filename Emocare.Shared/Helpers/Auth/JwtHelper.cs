@@ -42,7 +42,27 @@ namespace Emocare.Shared.Helpers.Auth
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
-    }
+        public string GenerateShortLivedToken(Guid userId)
+        {
+            var claims = new[]
+            {
+        new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
+        new Claim("Purpose", "SignalR") // So we can validate usage
+    };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Secret"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(5),
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
 
     }
+
+}
 

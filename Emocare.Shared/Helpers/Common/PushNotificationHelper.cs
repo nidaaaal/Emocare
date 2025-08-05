@@ -1,14 +1,15 @@
-﻿    using Microsoft.Extensions.Configuration;
+﻿using Emocare.Domain.Interfaces.Helper.Common;
+using Microsoft.Extensions.Configuration;
     using System.Text.Json;
     using WebPush;
 
-namespace Emocare.Shared.Helpers.Chat
+namespace Emocare.Shared.Helpers.Common
 {
-    public class WebPushNotificationService
+    public class PushNotificationHelper : IPushNotificationHelper
     {
         private readonly VapidDetails _vapidDetails;
 
-        public WebPushNotificationService(IConfiguration config)
+        public PushNotificationHelper(IConfiguration config)
         {
             _vapidDetails = new VapidDetails(
                 subject: "mailto:admin@yourdomain.com",
